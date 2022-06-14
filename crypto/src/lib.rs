@@ -1,8 +1,6 @@
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        let result = 2 + 2;
-        assert_eq!(result, 4);
-    }
-}
+//! Cryptographic primitives (functions and types).
+//!
+//! Basic implementation of Crypto and Hash functions and types.
+#![warn(clippy::all)]
+
+pub mod blake;

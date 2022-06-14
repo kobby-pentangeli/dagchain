@@ -1,8 +1,11 @@
 [package]
 name = "crypto"
 version = "0.1.0"
+description = "Cryptographic primitives for the DAG chain"
+authors = ["Kobby Pentangeli <kobbypentangeli@gmail.com>"]
+license = "MIT"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
+blake2b_simd = "1.0.0"
+serde = { version = "1.0", features = ["derive"] }
