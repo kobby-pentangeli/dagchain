@@ -6,10 +6,8 @@ use thiserror::Error;
 pub enum CryptoError {
     #[error("Serialization error: {0}")]
     SerializationError(String),
-
     #[error("Deserialization error: {0}")]
     DeserializationError(String),
-
     #[error("Option(None) returned error")]
     NoneError,
 }

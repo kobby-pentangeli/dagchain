@@ -4,10 +4,8 @@ use thiserror::Error;
 pub enum StorageError {
     #[error("MemoryStorage Error: {0}")]
     MemoryStorageError(String),
-
     #[error("Sled Error: {0}")]
     SledError(sled::Error),
-
     #[error("Option<None>: an error!")]
     NoneError,
 }
