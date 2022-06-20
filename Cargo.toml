@@ -1,8 +1,9 @@
 [workspace]
 members = [
     "cli",
-    "crypto",
-    "p2p",
     "consensus",
-    "dag"
+    "crypto",
+    "dag",
+    "p2p",
+    "storage"
 ]
