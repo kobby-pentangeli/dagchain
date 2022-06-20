@@ -2,7 +2,6 @@ use crate::{error::StorageError, Storage};
 use crypto::hash::Hash;
 use std::collections::HashMap;
 
-#[derive(Clone, Debug)]
 pub struct MemoryStorage {
     storage: HashMap<Hash, Vec<u8>>,
 }

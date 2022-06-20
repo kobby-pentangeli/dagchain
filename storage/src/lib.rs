@@ -5,6 +5,7 @@ use serde::{Deserialize, Serialize};
 
 pub mod error;
 pub mod memory;
+pub mod sled;
 
 pub use error::StorageError;
 
