@@ -4,6 +4,8 @@ use crypto::hash::Hash;
 use serde::{Deserialize, Serialize};
 
 pub mod error;
+pub mod memory;
+
 pub use error::StorageError;
 
 #[derive(Clone, Debug, Deserialize, Eq, PartialEq, Serialize)]
