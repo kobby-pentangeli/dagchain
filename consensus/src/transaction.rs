@@ -171,8 +171,8 @@ impl Transaction {
         Ok(sig.unwrap().verify(&pubkey, payload))
     }
 
-    pub fn get_tx_id(&self) -> Option<Hash> {
-        self.id
+    pub fn get_tx_id(&self) -> Hash {
+        self.id.unwrap()
     }
 
     pub fn set_tx_id(&mut self, id: Hash) {

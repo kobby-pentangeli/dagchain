@@ -4,6 +4,7 @@ pub mod account;
 pub mod clock;
 pub mod config;
 pub mod network;
+pub mod quantum;
 pub mod transaction;
 pub mod tree;
 
@@ -22,12 +23,12 @@ pub trait Consensus {
     where
         Self: Sized;
 
-    fn query(&mut self, state: &AccountStateChoice) -> &mut Self
+    fn query(&self, state: &AccountStateChoice) -> &Self
     where
         Self: Sized;
 
     fn send_consensus_requests<T, N>(
-        &mut self,
+        &self,
         state: &AccountStateChoice,
         tx: &Transaction,
         network: &mut T,
@@ -39,7 +40,7 @@ pub trait Consensus {
 
     fn complete_dag_consensus(
         &self,
-        preferred: usize,
+        acceptance: usize,
         state: &AccountStateChoice,
         tree: &mut HashTreeNode,
     ) -> ConsensusStatus;
@@ -55,7 +56,7 @@ pub trait Consensus {
         T: ConsensusNetwork,
         N: CommonConsensusNetwork;
 
-    fn on_query(&mut self, state: &AccountStateChoice) -> (Hash, bool);
+    fn on_query(&self, state: &AccountStateChoice) -> (Hash, bool);
 
     fn target_count(&self) -> usize;
 }
