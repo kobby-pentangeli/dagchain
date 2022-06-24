@@ -3,6 +3,7 @@
 pub mod account;
 pub mod clock;
 pub mod config;
+pub mod dag_consensus;
 pub mod network;
 pub mod quantum;
 pub mod transaction;
