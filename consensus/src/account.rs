@@ -67,10 +67,10 @@ pub struct AccountStateChoice {
 }
 
 impl AccountStateChoice {
-    pub fn new(account_state_id: Hash, tx: Transaction) -> Self {
+    pub fn new(account_state_id: Hash, tx: &Transaction) -> Self {
         Self {
             account_state_id,
-            tx,
+            tx: tx.clone(),
         }
     }
 }
