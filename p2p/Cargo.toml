@@ -1,8 +1,11 @@
 [package]
 name = "p2p"
 version = "0.1.0"
+description = "Peer-to-peer (P2P) library for the DAGchain"
+authors = ["Kobby Pentangeli <kobbypentangeli@gmail.com>"]
+license = "MIT"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
+crypto = { path = "../crypto" }
+consensus = { path = "../consensus" }

@@ -1,8 +1,12 @@
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        let result = 2 + 2;
-        assert_eq!(result, 4);
-    }
-}
+//! P2P communications library for the DAGchain
+
+#![forbid(
+    arithmetic_overflow,
+    mutable_transmutes,
+    no_mangle_const_items,
+    unknown_crate_types
+)]
+#![warn(clippy::all)]
+
+/// Functionality of a node on the network
+pub mod node;
