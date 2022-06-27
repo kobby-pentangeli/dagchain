@@ -14,5 +14,6 @@ qp2p = "0.28.7"
 structopt = "0.3.26"
 serde_json = "1.0.81"
 crossbeam-channel = "0.5.5"
+serde = "1.0.137"
 crypto = { path = "../crypto" }
 consensus = { path = "../consensus" }
