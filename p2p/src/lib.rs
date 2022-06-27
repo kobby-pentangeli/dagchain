@@ -8,5 +8,7 @@
 )]
 #![warn(clippy::all)]
 
+/// P2p-related errors
+pub mod error;
 /// Functionality of a node on the network
 pub mod node;
