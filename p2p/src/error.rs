@@ -1,4 +1,4 @@
-use crate::node::events::Event;
+use crate::node::event::Event;
 use thiserror::Error;
 
 /// P2p-related errors

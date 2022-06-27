@@ -1,3 +1,5 @@
 pub mod config;
-pub mod events;
+pub mod connection;
+pub mod event;
 pub mod identity;
+pub mod message;
