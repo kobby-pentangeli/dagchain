@@ -23,7 +23,7 @@ pub enum Event {
     InitBenchmarkingSignal(usize, u64),
     CompleteRound,
     BenchmarkStats(HashSet<u64>),
-    BatchedConsensusReqest {
+    BatchedConsensusRequest {
         sender: Hash,
         data: Vec<(AccountStateChoice, Transaction)>,
         count: usize,
