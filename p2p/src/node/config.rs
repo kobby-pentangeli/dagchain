@@ -1,4 +1,4 @@
-use qp2p::Config as QuicConfig;
+use quic_p2p::Config as QuicConfig;
 use std::collections::hash_set::{self, HashSet};
 use std::iter::IntoIterator;
 use std::net::SocketAddr;

@@ -11,7 +11,7 @@ pub enum P2pError {
     #[error("Multibase encode/decode error: {0}")]
     MultibaseError(multibase::Error),
     #[error("Quic error: {0}")]
-    QuicP2pError(qp2p::ConnectionError),
+    QuicP2pError(quic_p2p::QuicP2pError),
     #[error("I/O error: {0}")]
     IoError(std::io::Error),
     #[error("Crossbeam receiver error: {0}")]
