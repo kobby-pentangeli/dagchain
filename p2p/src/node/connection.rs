@@ -13,7 +13,7 @@ pub(super) const MAX_CONNECTION_LEN: usize = 5;
 pub type ConnectionMap = HashMap<SocketAddr, (Option<Hash>, ConnectionState)>;
 
 /// Manages the connections of a node
-pub(super) struct Connection {
+pub struct Connection {
     entries: ConnectionMap,
     active_connections: HashMap<Hash, SocketAddr>,
     routing_table: RoutingTable,
